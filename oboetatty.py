@@ -78,7 +78,7 @@ with open(args.cardsource, 'r') as cardsource:
         stdout.write("\n" + "\n".join(front))
         front = None
         input("\nPress \"Enter\" to see the answer.")
-        stdout.write("\n" + "\n".join(card))
+        stdout.write("\n" + "\n".join(card) + "\n")
         while True:
           answer = input(input_prompt).lower().strip()
           if answer == "q" or answer == "quit":
